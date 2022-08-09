@@ -21,6 +21,7 @@
 		0A846F2D28A1A79800C2B3C5 /* Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A846F2C28A1A79800C2B3C5 /* Keyboard.swift */; };
 		0A846F3028A28AB800C2B3C5 /* Shake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A846F2F28A28AB800C2B3C5 /* Shake.swift */; };
 		0A846F3228A28AFD00C2B3C5 /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A846F3128A28AFD00C2B3C5 /* View+Extension.swift */; };
+		0AACF0C228A30C61006B9DC9 /* FlipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AACF0C128A30C61006B9DC9 /* FlipView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		0A846F2C28A1A79800C2B3C5 /* Keyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keyboard.swift; sourceTree = "<group>"; };
 		0A846F2F28A28AB800C2B3C5 /* Shake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shake.swift; sourceTree = "<group>"; };
 		0A846F3128A28AFD00C2B3C5 /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
+		0AACF0C128A30C61006B9DC9 /* FlipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlipView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				0A846F2F28A28AB800C2B3C5 /* Shake.swift */,
+				0AACF0C128A30C61006B9DC9 /* FlipView.swift */,
 			);
 			path = Animations;
 			sourceTree = "<group>";
@@ -215,6 +218,7 @@
 				0A846F2D28A1A79800C2B3C5 /* Keyboard.swift in Sources */,
 				0A846F1E28A19C2800C2B3C5 /* Color+Extension.swift in Sources */,
 				0A846F3028A28AB800C2B3C5 /* Shake.swift in Sources */,
+				0AACF0C228A30C61006B9DC9 /* FlipView.swift in Sources */,
 				0A846F3228A28AFD00C2B3C5 /* View+Extension.swift in Sources */,
 				0A846F2728A19F7000C2B3C5 /* WordleDataModel.swift in Sources */,
 				0A846F0C28A1906D00C2B3C5 /* WordleCloneApp.swift in Sources */,
