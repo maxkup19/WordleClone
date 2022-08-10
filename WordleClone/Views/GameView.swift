@@ -11,29 +11,47 @@ struct GameView: View {
     @EnvironmentObject var dm: WordleDataModel
     
     var body: some View {
-        NavigationView {
-            VStack {
-                Spacer()
-                VStack(spacing: 3) {
-                    ForEach(0...5, id: \.self) { index in
-                        GuessView(guess: $dm.guesses[index])
-                            .shake(animatableData: CGFloat(dm.incorrectAttempts[index]))
+        ZStack {
+            NavigationView {
+                VStack {
+                    Spacer()
+                    VStack(spacing: 3) {
+                        ForEach(0...5, id: \.self) { index in
+                            GuessView(guess: $dm.guesses[index])
+                                .shake(animatableData: CGFloat(dm.incorrectAttempts[index]))
+                        }
+                    }
+                    .frame(width: Global.boardWidth, height: 6 * Global.boardWidth / 5)
+                    Spacer()
+                    Keyboard()
+                        .scaleEffect(Global.keyboardScale)
+                        .padding(.top)
+                    Spacer()
+                }
+                .disabled(dm.showStats)
+                .navigationBarTitleDisplayMode(.inline)
+                .overlay(alignment: .top) {
+                    if let toastText = dm.toastText {
+                        ToastView(toastText: toastText)
+                            .offset(y: 20)
                     }
                 }
-                .frame(width: Global.boardWidth, height: 6 * Global.boardWidth / 5)
-                Spacer()
-                Keyboard()
-                    .scaleEffect(Global.keyboardScale)
-                    .padding(.top)
-                Spacer()
-            }
-                .navigationBarTitleDisplayMode(.inline)
                 .toolbar {
                     ToolbarItem(placement: .navigationBarLeading) {
-                        Button {
-                            
-                        } label: {
-                            Image(systemName: "questionmark.circle")
+                        HStack {
+                            if !dm.inPlay {
+                                Button {
+                                    dm.newGame()
+                                } label: {
+                                    Text("New")
+                                        .foregroundColor(.primary)
+                                }
+                            }
+                            Button {
+                                //MARK: - TODO
+                            } label: {
+                                Image(systemName: "questionmark.circle")
+                            }
                         }
                     }
                     
@@ -47,7 +65,10 @@ struct GameView: View {
                     ToolbarItem(placement: .navigationBarTrailing) {
                         HStack {
                             Button {
-                                // TODO: - info
+                                withAnimation {
+                                    dm.showStats.toggle()
+                                    print(dm.showStats)
+                                }
                             } label: {
                                 Image(systemName: "chart.bar")
                             }
@@ -56,14 +77,15 @@ struct GameView: View {
                             } label: {
                                 Image(systemName: "gearshape.fill")
                             }
-
-
                         }
                     }
                 }
+            }
+            if dm.showStats {
+                StatsView()
+            }
         }
         .navigationViewStyle(.stack)
-        
     }
 }
 
