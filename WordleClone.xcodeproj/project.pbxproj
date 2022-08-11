@@ -28,6 +28,7 @@
 		0AACF0CA28A57044006B9DC9 /* UIWindow+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AACF0C928A57044006B9DC9 /* UIWindow+Extension.swift */; };
 		0AACF0CC28A58C56006B9DC9 /* ColorSchemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AACF0CB28A58C55006B9DC9 /* ColorSchemeManager.swift */; };
 		0AACF0CE28A58D90006B9DC9 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AACF0CD28A58D90006B9DC9 /* SettingsView.swift */; };
+		0AACF0D228A59F1D006B9DC9 /* HelpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AACF0D128A59F1D006B9DC9 /* HelpView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +54,7 @@
 		0AACF0C928A57044006B9DC9 /* UIWindow+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIWindow+Extension.swift"; sourceTree = "<group>"; };
 		0AACF0CB28A58C55006B9DC9 /* ColorSchemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSchemeManager.swift; sourceTree = "<group>"; };
 		0AACF0CD28A58D90006B9DC9 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		0AACF0D128A59F1D006B9DC9 /* HelpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +138,7 @@
 				0AACF0C328A3E1BE006B9DC9 /* ToastView.swift */,
 				0AACF0C728A3E8E3006B9DC9 /* StatsView.swift */,
 				0AACF0CD28A58D90006B9DC9 /* SettingsView.swift */,
+				0AACF0D128A59F1D006B9DC9 /* HelpView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -240,6 +243,7 @@
 				0A846F1E28A19C2800C2B3C5 /* Color+Extension.swift in Sources */,
 				0AACF0C628A3E541006B9DC9 /* Statistic.swift in Sources */,
 				0A846F3028A28AB800C2B3C5 /* Shake.swift in Sources */,
+				0AACF0D228A59F1D006B9DC9 /* HelpView.swift in Sources */,
 				0AACF0C428A3E1BE006B9DC9 /* ToastView.swift in Sources */,
 				0AACF0C228A30C61006B9DC9 /* FlipView.swift in Sources */,
 				0A846F3228A28AFD00C2B3C5 /* View+Extension.swift in Sources */,
