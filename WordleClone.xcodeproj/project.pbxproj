@@ -88,7 +88,7 @@
 				0A846F2528A19F5900C2B3C5 /* ViewModels */,
 				0A846F2228A19E1700C2B3C5 /* Views */,
 				0A846F1F28A19D4400C2B3C5 /* Models */,
-				0A846F1C28A19C0C00C2B3C5 /* Extesions */,
+				0A846F1C28A19C0C00C2B3C5 /* Extensions */,
 				0A846F2E28A28A9B00C2B3C5 /* Animations */,
 				0A846F0B28A1906D00C2B3C5 /* WordleCloneApp.swift */,
 				0A846F0F28A1906D00C2B3C5 /* Assets.xcassets */,
@@ -106,14 +106,14 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		0A846F1C28A19C0C00C2B3C5 /* Extesions */ = {
+		0A846F1C28A19C0C00C2B3C5 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
 				0A846F1D28A19C2800C2B3C5 /* Color+Extension.swift */,
 				0A846F3128A28AFD00C2B3C5 /* View+Extension.swift */,
 				0AACF0C928A57044006B9DC9 /* UIWindow+Extension.swift */,
 			);
-			path = Extesions;
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		0A846F1F28A19D4400C2B3C5 /* Models */ = {
