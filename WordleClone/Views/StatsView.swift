@@ -18,9 +18,12 @@ struct StatsView: View {
                         dm.showStats.toggle()
                     }
                 } label: {
-                    Image(systemName: "xmark")
+                    VStack{
+                        Image(systemName: "xmark")
+                    }
                 }
                 .offset(x: 20, y: 10)
+                
             }
             Text("STATISTICS")
                 .font(.headline)
@@ -68,8 +71,23 @@ struct StatsView: View {
                         Spacer()
                     }
                 }
+                if dm.gameOver {
+                    HStack {
+                        Spacer()
+                        Button {
+                            dm.shareResult()
+                        } label: {
+                            HStack {
+                                Image(systemName: "square.and.arrow.up")
+                                Text("Share")
+                            }
+                            .foregroundColor(.white)
+                            .padding(8)
+                            .background(Color.correct)
+                        }
+                    }
+                }
             }
-            
             Spacer()
         }
         .padding(.horizontal, 40)

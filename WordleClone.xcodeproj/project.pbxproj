@@ -25,6 +25,9 @@
 		0AACF0C428A3E1BE006B9DC9 /* ToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AACF0C328A3E1BE006B9DC9 /* ToastView.swift */; };
 		0AACF0C628A3E541006B9DC9 /* Statistic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AACF0C528A3E541006B9DC9 /* Statistic.swift */; };
 		0AACF0C828A3E8E3006B9DC9 /* StatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AACF0C728A3E8E3006B9DC9 /* StatsView.swift */; };
+		0AACF0CA28A57044006B9DC9 /* UIWindow+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AACF0C928A57044006B9DC9 /* UIWindow+Extension.swift */; };
+		0AACF0CC28A58C56006B9DC9 /* ColorSchemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AACF0CB28A58C55006B9DC9 /* ColorSchemeManager.swift */; };
+		0AACF0CE28A58D90006B9DC9 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AACF0CD28A58D90006B9DC9 /* SettingsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +50,9 @@
 		0AACF0C328A3E1BE006B9DC9 /* ToastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastView.swift; sourceTree = "<group>"; };
 		0AACF0C528A3E541006B9DC9 /* Statistic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Statistic.swift; sourceTree = "<group>"; };
 		0AACF0C728A3E8E3006B9DC9 /* StatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsView.swift; sourceTree = "<group>"; };
+		0AACF0C928A57044006B9DC9 /* UIWindow+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIWindow+Extension.swift"; sourceTree = "<group>"; };
+		0AACF0CB28A58C55006B9DC9 /* ColorSchemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSchemeManager.swift; sourceTree = "<group>"; };
+		0AACF0CD28A58D90006B9DC9 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +111,7 @@
 			children = (
 				0A846F1D28A19C2800C2B3C5 /* Color+Extension.swift */,
 				0A846F3128A28AFD00C2B3C5 /* View+Extension.swift */,
+				0AACF0C928A57044006B9DC9 /* UIWindow+Extension.swift */,
 			);
 			path = Extesions;
 			sourceTree = "<group>";
@@ -128,6 +135,7 @@
 				0A846F2C28A1A79800C2B3C5 /* Keyboard.swift */,
 				0AACF0C328A3E1BE006B9DC9 /* ToastView.swift */,
 				0AACF0C728A3E8E3006B9DC9 /* StatsView.swift */,
+				0AACF0CD28A58D90006B9DC9 /* SettingsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -136,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				0A846F2628A19F7000C2B3C5 /* WordleDataModel.swift */,
+				0AACF0CB28A58C55006B9DC9 /* ColorSchemeManager.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -221,8 +230,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A846F2B28A1A5C300C2B3C5 /* LetterButtonView.swift in Sources */,
+				0AACF0CA28A57044006B9DC9 /* UIWindow+Extension.swift in Sources */,
 				0A846F0E28A1906D00C2B3C5 /* GameView.swift in Sources */,
+				0AACF0CE28A58D90006B9DC9 /* SettingsView.swift in Sources */,
 				0A846F2428A19E3A00C2B3C5 /* GuessView.swift in Sources */,
+				0AACF0CC28A58C56006B9DC9 /* ColorSchemeManager.swift in Sources */,
 				0A846F2128A19D5200C2B3C5 /* Guess.swift in Sources */,
 				0A846F2D28A1A79800C2B3C5 /* Keyboard.swift in Sources */,
 				0A846F1E28A19C2800C2B3C5 /* Color+Extension.swift in Sources */,
